@@ -13,4 +13,4 @@
 #### [Betano](https://br.betano.com/) - 8: Aesthetic and Minimalist Design
 
 ### Exemplo 4
-#### [Sofascore](https://www.sofascore.com/pt/)
+#### [Sofascore](https://www.sofascore.com/pt/) - 8: Aesthetic and Minimalist Design
