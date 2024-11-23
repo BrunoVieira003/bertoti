@@ -1,13 +1,13 @@
 package desconto;
 
-public class DescontoPremium implements DescontoStrategy{
+public class DescontoComum implements DescontoStrategy{
     @Override
     public double aplicar(double valor) {
-        return valor * 0.7;
+        return valor;
     }
 
     @Override
     public String getNome() {
-        return "Premium";
+        return "Comum";
     }
 }

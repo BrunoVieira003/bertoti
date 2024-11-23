@@ -1,12 +1,12 @@
 import desconto.DescontoPremium;
 import desconto.DescontoStrategy;
 import desconto.DescontoVIP;
-import desconto.SemDesconto;
+import desconto.DescontoComum;
 import produto.Produto;
 
 public class Main {
     public static void main(String[] args){
-        DescontoStrategy semDesconto = new SemDesconto();
+        DescontoStrategy semDesconto = new DescontoComum();
         DescontoStrategy descontoVIP = new DescontoVIP();
         DescontoStrategy descontoPremium = new DescontoPremium();
 
@@ -19,10 +19,11 @@ public class Main {
 
         // Alterando para cliente VIP
         produto.setTipoDesconto(descontoVIP);
-        System.out.println("Preço para cliente VIP: " + produto.getPrecoFinal());
+        System.out.println("Preço para cliente " + produto.getTipoDesconto().getNome() +": " + produto.getPrecoFinal());
 
         // Alterando para cliente Premium
         produto.setTipoDesconto(descontoPremium);
-        System.out.println("Preço para cliente Premium: " + produto.getPrecoFinal());
+        System.out.println("Preço para cliente " + produto.getTipoDesconto().getNome() +": " + produto.getPrecoFinal());
+
     }
 }

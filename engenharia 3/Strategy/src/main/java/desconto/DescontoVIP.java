@@ -7,7 +7,7 @@ public class DescontoVIP implements DescontoStrategy{
     }
 
     @Override
-    public String getNomeDesconto() {
+    public String getNome() {
         return "VIP";
     }
 }

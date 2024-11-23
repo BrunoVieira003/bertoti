@@ -3,6 +3,7 @@ package produto;
 import desconto.DescontoStrategy;
 
 public class Produto {
+
     public DescontoStrategy tipoDesconto;
     private String nome;
     private double preco;
@@ -19,6 +20,10 @@ public class Produto {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public DescontoStrategy getTipoDesconto() {
+        return tipoDesconto;
     }
 
     public void setTipoDesconto(DescontoStrategy tipoDesconto) {
